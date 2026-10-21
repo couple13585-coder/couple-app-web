@@ -41,6 +41,12 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Request the current loader even when the host caches static files.
+    const bootstrap = document.createElement('script');
+    bootstrap.src = 'flutter_bootstrap.js?load=' + Date.now();
+    bootstrap.async = true;
+    document.body.appendChild(bootstrap);
+  </script>
 </body>
 </html>
