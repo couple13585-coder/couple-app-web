@@ -42,7 +42,7 @@ _flutter.buildConfig = {"engineRevision":"06a2e2a110089dff50fe635cffd2a61e1b24fb
 
 
 // Each release loads its own entrypoint URL instead of a cached older build.
-const releaseVersion = ""2486446446" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */";
+const releaseVersion = "365920257" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */;
 for (const build of _flutter.buildConfig.builds) {
   if (build.mainJsPath) {
     build.mainJsPath += '?release=' + releaseVersion;
