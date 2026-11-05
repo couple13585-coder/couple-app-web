@@ -8562,7 +8562,7 @@ case"gifts_screen_exact.webp":return new A.er(A.b([r.$2(0,250),B.Df],t.R),s,96,B
 case"cycle_journal_screen_exact.webp":return new A.er(A.b([r.$2(0,260),B.DF,B.Dy],t.R),s,96,B.an)
 case"personal_journal_screen_exact.webp":return new A.er(A.b([r.$2(0,1536)],t.R),s,96,B.an)
 case"intimacy_journal_screen_exact.webp":return new A.er(A.b([r.$2(0,282),B.DE],t.R),s,96,B.an)
-case"conflict_management_screen_v2.png":return new A.er(A.b([r.$2(0,240),B.Dr,B.Dq],t.R),s,96,B.oO)
+case"conflict_management_screen_v3.png":return new A.er(A.b([r.$2(0,240),B.Dr,B.Dq],t.R),s,96,B.oO)
 case"conflict_journal_screen_exact.webp":return new A.er(A.b([r.$2(0,355),B.Dh,B.Do],t.R),s,96,B.an)
 case"date_journal_screen_v2.webp":return new A.er(A.b([r.$2(0,355),B.Dd,B.Dn],t.R),s,96,B.an)
 case"date_journal_screen_exact.webp":return new A.er(A.b([r.$2(0,355),B.Du,B.Dx,r.$2(1468,68)],t.R),s,0,B.cV)
@@ -48151,7 +48151,7 @@ p.push(a1.$2(new A.e(f,s,e,s+b),new A.e(h,c,g,c+b*d)))
 return p},
 adD(a){return this.SC(a,226,570)},
 VZ(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=a0.c,a=b>0
-if(a&&B.c.cY(c.d,"conflict_management_screen_v2.png"))return c.SC(a0,150,425)
+if(a&&B.c.cY(c.d,"conflict_management_screen_v3.png"))return c.SC(a0,120,430)
 if(a&&B.c.cY(c.d,"conflict_journal_screen_exact.webp"))return c.adD(a0)
 if(a&&B.c.cY(c.d,"date_journal_screen_v2.webp")&&a0.a.b===355)return c.SO(a0)
 if(a&&B.c.cY(c.d,"statistics_screen_exact.webp"))return c.aqF(a0)
@@ -49284,7 +49284,7 @@ $0(){return A.vQ(this.a,"/journals/conflicts/manage",t.X)},
 $S:0}
 A.vX.prototype={
 H(a){var s=null
-return A.fy(s,B.oO,A.dS(!0,new A.eN(B.bf,"assets/illustrations/conflict_management_screen_v2.png","\u05e0\u05d9\u05d4\u05d5\u05dc \u05e7\u05d5\u05e0\u05e4\u05dc\u05d9\u05e7\u05d8",new A.acP(),s),!0),s,s)}}
+return A.fy(s,B.oO,A.dS(!0,new A.eN(B.bf,"assets/illustrations/conflict_management_screen_v3.png","\u05e0\u05d9\u05d4\u05d5\u05dc \u05e7\u05d5\u05e0\u05e4\u05dc\u05d9\u05e7\u05d8",new A.acP(),s),!0),s,s)}}
 A.acP.prototype={
 $3(a,b,c){return A.b([A.fC(0,b,B.AI,$.fF().eR(26,1.1),"\u05de\u05d7\u05d9\u05db\u05d5\u05db\u05d9\u05dd \u05dc\u05e6\u05de\u05d9\u05d7\u05d4",a)],t.p)},
 $S:16}
