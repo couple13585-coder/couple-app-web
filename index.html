@@ -42,11 +42,28 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script>
+    const pushBridge = document.createElement('script');
+    pushBridge.src = 'couple_push.js?load=' + Date.now();
+    pushBridge.onload = loadFlutter;
+    pushBridge.onerror = loadFlutter;
+    document.body.appendChild(pushBridge);
+    function loadFlutter() {
+    window.couplePush ||= {
+      supported: false, enable: async () => JSON.stringify({status:'unsupported'}),
+      ensureOwner: async () => {
+        const registration = await navigator.serviceWorker?.getRegistration(new URL('push/', document.baseURI));
+        const subscription = await registration?.pushManager.getSubscription();
+        if (subscription) await subscription.unsubscribe();
+        localStorage.removeItem('couple_push_owner');
+      },
+      disable: async () => {}
+    };
     // Request the current loader even when the host caches static files.
     const bootstrap = document.createElement('script');
     bootstrap.src = 'flutter_bootstrap.js?load=' + Date.now();
     bootstrap.async = true;
     document.body.appendChild(bootstrap);
+    }
   </script>
 </body>
 </html>
